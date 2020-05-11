@@ -4,10 +4,10 @@
         <section class="main-section" id="home">
             <div class="wrapper">
                 <div class="main-section__content" data-aos="fade-left">
-                    <h1 class="style-title" :data-content="$t('main.hello') + ','">{{$t('main.hello')}},</h1>
-                    <h2 class="style-title" :data-content="$t('main.myNameIs')">{{$t('main.myNameIs')}}</h2>
-                    <h2 class="style-title" :data-content="$t('main.name') + ','">{{$t('main.name')}},</h2>
-                    <h2 class="style-title" :data-content="$t('main.myProfession')">{{$t('main.myProfession')}}</h2>
+                    <h1 class="style-title">{{$t('main.hello')}},</h1>
+                    <h2 class="style-title">{{$t('main.myNameIs')}}</h2>
+                    <h2 class="style-title">{{$t('main.name')}},</h2>
+                    <h2 class="style-title">{{$t('main.myProfession')}}</h2>
                 </div>
             </div>
         </section>

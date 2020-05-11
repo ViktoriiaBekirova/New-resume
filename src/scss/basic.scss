@@ -92,28 +92,8 @@ p, ul, li {
 }
 
 .style-title {
-  color: $blackColor;
-  position: relative
-}
-
-.style-title:after {
-  content: attr(data-content);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  -webkit-text-stroke: 3px $whiteColor
-}
-
-.style-title:before {
-  content: attr(data-content);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  -webkit-text-stroke: 6px $blackColor
+  -webkit-text-stroke: 1px #ffffff;
+  text-shadow: 4px 4px 0 #131313, -2px -2px 0 #131313, 2px 2px 0 #131313, -2px 2px 0 #131313, 2px 2px 0 #131313;
 }
 
 .education-section,
@@ -137,23 +117,12 @@ p, ul, li {
 .main-section {
   display: flex;
   height: 100vh;
+  background-image: url("../../public/img/main.jpg");
+  background-position: center right;
+  background-size: cover;
 
-  &:before {
-    content: ' ';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("../../public/img/main.jpg");
-    background-position: center right;
-    background-size: cover;
-    will-change: transform;
-    z-index: -1;
-
-    @media (max-width: $mobile) {
-      background-position: center right -150px;
-    }
+  @media (max-width: $mobile) {
+    background-position: center right -150px;
   }
 
   &__content {
