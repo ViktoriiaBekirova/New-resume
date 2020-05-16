@@ -144,7 +144,7 @@
             headerClass: 'menu_inactive'
         }),
         mounted() {
-            if (this.$i18n.locale !== 'en') this.changeLang(this.$i18n.locale);
+            if (this.$i18n.locale !== 'ru') this.changeLang(this.$i18n.locale);
         },
         methods: {
             changeLangChooseVisibility() {
